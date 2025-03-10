@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="puzzle-page" data-puzzle-id="puzzle1">
+    <h2>The First Clue</h2>
+    <div class="puzzle-content">
+        <p>Unscramble the letters to reveal the first clue:</p>
+        <div class="scrambled-word">
+            <div class="letter-container">
+                {% for letter in "YHDRTABI"|list %}
+                <span class="draggable-letter" draggable="true">{{ letter }}</span>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="solution-input">
+            <input type="text" id="puzzle-solution" class="form-control" placeholder="Enter the word">
+            <button class="btn btn-primary check-solution">Submit</button>
+        </div>
+        <button class="btn btn-secondary show-hint">Need a Hint?</button>
+        <button class="btn btn-link skip-puzzle">Skip Puzzle</button>
+        <p>15th of March</p>
+    </div>
+</div>
+{% endblock %}

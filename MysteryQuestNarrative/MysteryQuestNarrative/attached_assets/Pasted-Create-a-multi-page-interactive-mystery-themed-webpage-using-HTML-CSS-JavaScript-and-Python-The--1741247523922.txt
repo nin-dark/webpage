@@ -1,0 +1,39 @@
+Create a multi-page interactive mystery-themed webpage using HTML, CSS, JavaScript, and Python. The theme is The Missing Gift Mystery, designed as part of a birthday surprise experience. The website should feature dynamic interactions, hidden clues, and puzzles that lead users through different pages.
+
+Python will be used for backend logic, managing user progress, storing puzzle solutions, and dynamically generating content. Additionally, Python will be utilized to create interactive mini-games that are embedded into the website, enhancing the mystery-solving experience.
+
+The ai should use the core features defined below to use as a script as to generate the pages,  ensuring smooth navigation, engaging visuals, and a coherent storyline. Each page should include interactive features such as clickable objects, secret messages, and logical challenges to unlock the next stage of the mystery.
+
+Core Features: 
+1. Landing Page (Crime Scene Setup)
+   - A dark, mystery-themed design with scattered notes, a locked box, and a blurred-out address.  
+   - A clickable "Start Investigation" button that leads to the first clue.  
+
+2. Interactive Elements:  
+   - Users must solve clues to progress to the next page.  
+   - Hints can be revealed dynamically with hover effects, hidden clickable elements, or password inputs.  
+   - A simple JavaScript-based puzzle, such as:  
+     - A scrambled word that needs to be rearranged.  
+     - A lock combination based on clues in the text.  
+     - A drag-and-drop feature to piece together a torn note.  
+
+3. Linked Pages (Progressive Storytelling)  
+   - Each solved clue should direct the user to a new page using window.location.href or similar navigation methods.  
+   - Each new page reveals more about the missing gift and offers a new challenge.  
+   - The final page should reveal the hidden birthday surprise.  
+
+4. Scalability (Adding More Pages Later)  
+   - The code structure should allow easy addition of new mystery pages by following a template format.  
+   - JavaScript should handle dynamic linking so that when a new page is added, it seamlessly integrates into the existing flow.  
+
+5. Styling & UI (CSS & Animations)  
+   - Use CSS for a dark, cinematic theme with red and black tones.  
+   - Add smooth fade-ins, hover effects, and animations for clues appearing/disappearing.  
+   - Consider a typewriter effect for displaying new clues dynamically.  
+
+6. Additional Enhancements   
+   - Background music or sound effects for an immersive experience.  
+   - A simple timer or score system to track progress.  
+   - A secret "Skip to End" button in case the player gets stuck.  
+
+The website should be fully responsive for desktop and mobile. Ensure all JavaScript logic is modular so new features and pages can be easily integrated as new ideas come up.  

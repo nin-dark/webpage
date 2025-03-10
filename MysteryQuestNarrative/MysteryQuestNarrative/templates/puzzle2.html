@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="puzzle-page" data-puzzle-id="puzzle2">
+    <h2>The Locked Box</h2>
+    <div class="puzzle-content">
+        <p>Enter the special date to unlock the box (DD/MM):</p>
+        <div class="lock-container">
+            <div class="lock-display">
+                <input type="text" id="lock-input" class="form-control" placeholder="DD/MM" maxlength="10">
+            </div>
+            <div class="number-pad">
+                {% for n in range(0, 10) %}
+                <button class="btn btn-dark number-btn">{{ n }}</button>
+                {% endfor %}
+                <button class="btn btn-dark number-btn">/</button>
+                <button class="btn btn-danger clear-btn">Clear</button>
+            </div>
+            <button class="btn btn-primary check-solution mt-3">Submit</button>
+        </div>
+        <button class="btn btn-secondary show-hint mt-3">Need a Hint?</button>
+        <button class="btn btn-link skip-puzzle">Skip Puzzle</button>
+    </div>
+</div>
+{% endblock %}

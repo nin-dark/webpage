@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="landing-page">
+    <div class="mystery-scene">
+        <h1 class="typewriter">The Missing Gift Mystery</h1>
+        <div class="scene-description">
+            <p>A special birthday gift has disappeared without a trace...</p>
+            <p>Can you help solve the mystery and find it?</p>
+        </div>
+        <div class="evidence-box">
+            <i class="fas fa-gift mystery-icon"></i>
+            <i class="fas fa-magnifying-glass mystery-icon"></i>
+            <i class="fas fa-question mystery-icon"></i>
+        </div>
+        <a href="{{ url_for('puzzle1') }}" class="btn btn-danger start-btn">Start Investigation</a>
+    </div>
+</div>
+{% endblock %}

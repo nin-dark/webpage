@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="finale-page">
+    <div class="celebration">
+        <h1>Congratulations!</h1>
+        <div class="gift-reveal">
+            <i class="fas fa-gift gift-icon"></i>
+            <h2>You've found the missing gift!</h2>
+            <p class="score">Final Score: {{ session.get('score', 0) }}</p>
+        </div>
+        <div class="birthday-message typewriter">
+            <p>Happy Birthday! Your special surprise awaits...</p>
+        </div>
+        <div class="action-buttons">
+            <a href="{{ url_for('cake') }}" class="btn btn-primary present-btn">
+                <i class="fas fa-birthday-cake"></i> Celebrate with Cake!
+            </a>
+            <button class="btn btn-secondary restart-btn" onclick="window.location.href='/'">Start Over</button>
+        </div>
+    </div>
+</div>
+{% endblock %}

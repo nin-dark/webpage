@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="letter-page">
+    <div class="letter-content">
+        <div class="tulip-decoration top-left"></div>
+        <div class="tulip-decoration top-right"></div>
+        <div class="letter-text">
+            <h1>Dear Bhoomi</h1>
+            <div class="heart-decoration"></div>
+            <p class="message">
+                On this special day, I want to tell you how much joy and happiness you bring to my life.
+                You are the most wonderful person I know, and I'm so grateful to have you in my life.
+            </p>
+            <p class="message">
+                Your smile brightens up every room you walk into, and your kindness touches everyone around you.
+                I hope this birthday brings you all the love and happiness you deserve.
+            </p>
+            <p class="signature">
+                With love and best wishes,<br>
+                ❤️
+            </p>
+        </div>
+        <div class="tulip-decoration bottom-left"></div>
+        <div class="tulip-decoration bottom-right"></div>
+        <a href="{{ url_for('media') }}" class="btn btn-primary continue-btn">Continue to Surprise</a>
+    </div>
+</div>
+{% endblock %}

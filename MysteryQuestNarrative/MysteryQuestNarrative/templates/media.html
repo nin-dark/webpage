@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px 0;
+        }
+        .media-section {
+            margin-bottom: 40px;
+        }
+        .media-section h2 {
+            text-align: center;
+        }
+        .media-item {
+            margin: 10px;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="media-section" id="pictures">
+            <h2>Pictures</h2>
+            <!-- Add your images here -->
+            <div class="media-item">
+                <img src="path/to/your/image1.jpg" alt="Description of image 1">
+            </div>
+            <div class="media-item">
+                <img src="path/to/your/image2.jpg" alt="Description of image 2">
+            </div>
+            <!-- ...existing code... -->
+        </div>
+        <div class="media-section" id="videos">
+            <h2>Videos</h2>
+            <!-- Add your videos here -->
+            <div class="media-item">
+                <video controls>
+                    <source src="path/to/your/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="media-item">
+                <video controls>
+                    <source src="path/to/your/video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- ...existing code... -->
+        </div>
+    </div>
+</body>
+</html>

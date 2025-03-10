@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="puzzle-page" data-puzzle-id="puzzle3">
+    <h2>The Final Message</h2>
+    <div class="puzzle-content">
+        <p>Complete the word by finding the hidden letters:</p>
+        <div class="hidden-letters">
+            <div class="letter-grid">
+                {% for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"|list %}
+                <div class="letter-cell">{{ letter }}</div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="solution-input">
+            <input type="text" id="puzzle-solution" class="form-control" placeholder="Enter the word">
+            <button class="btn btn-primary check-solution">Submit</button>
+        </div>
+        <button class="btn btn-secondary show-hint mt-3">Need a Hint?</button>
+        <button class="btn btn-link skip-puzzle">Skip Puzzle</button>
+    </div>
+</div>
+{% endblock %}

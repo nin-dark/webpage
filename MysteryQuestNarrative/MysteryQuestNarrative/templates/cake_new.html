@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="cake-page">
+    <div class="cake-container">
+        <div class="cake">
+            <div class="cake-base"></div>
+            <div class="cake-top"></div>
+            <div class="candles">
+                {% for i in range(5) %}
+                <div class="candle" data-lit="false">
+                    <div class="flame hidden"></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="cake-slice hidden"></div>
+        <div class="tools">
+            <div class="lighter tool" data-selected="false">
+                <i class="fas fa-fire"></i>
+            </div>
+            <div class="knife tool" data-selected="false">
+                <i class="fas fa-utensils"></i>
+            </div>
+        </div>
+    </div>
+    <div class="instructions">
+        <p class="instruction-text">Light the candles and make a wish!</p>
+    </div>
+    <div class="letter-reveal hidden">
+        <h2>🎉 Time to read your special message!</h2>
+        <a href="{{ url_for('letter') }}" class="btn btn-primary continue-btn">
+            Read Your Birthday Letter
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/cake.js') }}"></script>
+{% endblock %}
